@@ -10,7 +10,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
 app.use("/api/flights", flightRoutes);
 app.use("/api/bookings", bookingRoutes);
 const PORT=process.env.PORT || 3000
