@@ -24,6 +24,16 @@ const getTodayString = () => {
   const dd = String(today.getDate()).padStart(2, "0");
   return `${yyyy}-${mm}-${dd}`;
 };
+const getMaxDateString = () => {
+  const maxDate = new Date();
+  maxDate.setFullYear(maxDate.getFullYear() + 1);
+
+  const yyyy = maxDate.getFullYear();
+  const mm = String(maxDate.getMonth() + 1).padStart(2, "0");
+  const dd = String(maxDate.getDate()).padStart(2, "0");
+
+  return `${yyyy}-${mm}-${dd}`;
+};
 
 // Convert yyyy-mm-dd (input value) -> dd/mm/yyyy (display/storage format)
 const toDisplayDate = (isoDate) => {
@@ -188,6 +198,8 @@ const [searchCriteria, setSearchCriteria] = useState({
             <div className="date-input-row">
               <input
                 type="date"
+                min={getTodayString()}
+                max={getMaxDateString()}
                 value={journeyDateIso}
                 onChange={(e) => setJourneyDateIso(e.target.value)}
               />
@@ -257,3 +269,4 @@ const [searchCriteria, setSearchCriteria] = useState({
 };
 
 export default FlightSearchPage;
+
