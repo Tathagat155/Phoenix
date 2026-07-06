@@ -12,10 +12,10 @@ const ConfirmationPage = () => {
 
   return (
     <div>
-      <Header />
+        <Header />     
 
       <div>
-        <h2>Booking Confirmed</h2>
+        <h2 >Booking Confirmed</h2>
         <p>Thank you for the booking.</p>
 
         {confirmedBooking && (

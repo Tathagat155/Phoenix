@@ -4,13 +4,13 @@ import LandingPage from "./pages/LandingPage";
 import FlightSearchPage from "./pages/FlightSearchPage";
 import FlightBookingPage from "./pages/FlightBookingPage";
 import ConfirmationPage from "./pages/ConfirmationPage";
+
 import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-   
-      <Routes>
-      
+
+      <Routes>      
         <Route path="/" element={<LandingPage />} />
         <Route path="/flight-search" element={<FlightSearchPage />} />
         <Route path="/flight-booking" element={<FlightBookingPage />} />

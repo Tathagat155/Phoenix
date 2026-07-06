@@ -202,6 +202,7 @@ const [searchCriteria, setSearchCriteria] = useState({
                 max={getMaxDateString()}
                 value={journeyDateIso}
                 onChange={(e) => setJourneyDateIso(e.target.value)}
+                onBlur={() => setTouched((t) => ({ ...t, journeyDate: true }))}
               />
             </div>
             {touched.journeyDate && !journeyDateIso && (

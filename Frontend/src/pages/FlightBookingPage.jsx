@@ -125,7 +125,7 @@ const FlightBookingPage = () => {
   };
   return (
     <div>
-      <Header />
+        <Header />
       <div className="page-container">
         <h1 className="page-title">
           Booking Confirmation for Flight {selectedFlight.airline} (
@@ -141,7 +141,7 @@ const FlightBookingPage = () => {
             <strong>Date:</strong> {selectedFlight.journeyDate}
           </p>
           <p>
-            <strong>Departure:</strong> {selectedFlight.departureTime}{" "}
+            <strong>Departure:</strong> {selectedFlight.departureTime}
             &nbsp;|&nbsp; <strong>Arrival:</strong> {selectedFlight.arrivalTime}
           </p>
         </div>

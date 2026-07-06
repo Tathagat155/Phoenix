@@ -5,19 +5,16 @@ const LandingPage = () => {
   const navigate = useNavigate();
   return (
     <div>
-      {" "}
-      <Header />{" "}
+        <Header />
       <div className="page-container">
-        {" "}
-        <h1 className="page-title">Welcome to Flight Booking App</h1>{" "}
+        <h1 className="page-title">Welcome to Flight Booking App</h1>
         <button
           className="btn-outlined"
           onClick={() => navigate("/flight-search")}
         >
-          {" "}
-          Search Flights Here{" "}
-        </button>{" "}
-      </div>{" "}
+          Search Flights Here
+        </button>
+      </div>
     </div>
   );
 };
