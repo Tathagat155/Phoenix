@@ -4,7 +4,7 @@ const API = axios.create({
   baseURL: API_URL,
 });
 // Search flights based on source, destination and date export
-  export const searchFlightsApi = async (searchData) => {
+export const searchFlightsApi = async (searchData) => {
   const response = await API.post("/flights/search", searchData);
   return response.data;
 }; // Create a booking export

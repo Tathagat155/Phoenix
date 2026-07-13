@@ -23,18 +23,18 @@ const ConfirmationPage = () => {
             <p><strong>Booking ID:</strong> {confirmedBooking._id}</p>
 
             <p>
-              <strong>Passenger:</strong>{" "}
+              <strong>Passenger:</strong>
               {confirmedBooking.firstName} {confirmedBooking.lastName}
             </p>
 
             <p>
-              <strong>Flight:</strong>{" "}
+              <strong>Flight:</strong>
               {confirmedBooking.flightAirline}
               ({confirmedBooking.flightNumber})
             </p>
 
             <p>
-              <strong>Route:</strong>{" "}
+              <strong>Route:</strong>
               {confirmedBooking.sourceCity} → {confirmedBooking.destinationCity}
             </p>
 
